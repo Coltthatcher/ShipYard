@@ -7,11 +7,14 @@
 }
 <ul>
   @foreach (Parcel parcel in Model)
-  {
+  { 
     <li>Length: @parcel.Length </li>
     <li>Width: @parcel.Width </li>
     <li>Height: @parcel.Height </li>
     <li>Weight: @parcel.Weight </li>
+    <li>Volume: @parcel.Volume</li>
+    <li>The cost to ship your parcel is <br> $@parcel.Cost</li>
+    <h2>===========</h2>
     
   }
 </ul>
